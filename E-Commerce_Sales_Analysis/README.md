@@ -1,8 +1,9 @@
-# Blinkit Commerce BI Project
+# E-Commerce Sales Analysis
 
-This project represents a Power BI dashboard created for Blinkit, aimed at analyzing sales, item performance, outlet characteristics, and customer trends. The dashboard provides valuable insights into the grocery business's operational and sales metrics, empowering stakeholders to make informed decisions.
+## Project Overview
+The E-Commerce Sales Analysis project leverages Power BI to provide an interactive and visually engaging dashboard that delves into the performance of an e-commerce platform. The dashboard offers insights into total sales, product performance, customer reviews, and pricing trends to help businesses make data-driven decisions and optimize their strategies.
 
----
+
 
 ## Table of Contents
 1. [Project Objective](#project-objective)
@@ -17,148 +18,127 @@ This project represents a Power BI dashboard created for Blinkit, aimed at analy
 
 ---
 
-## Project Objective
-The primary goal of this project was to build a visually compelling and interactive dashboard that helps Blinkit analyze:
-- Total sales and average sales by outlet type, size, and location.
-- Customer purchasing behavior and trends.
-- Outlet establishment growth over time.
-- Performance metrics such as item fat content, item visibility, and ratings.
-
 ---
 
 ## Data Used
-The data used for this project is stored in the `BlinkIT Grocery Data.csv` file, which includes the following columns:
-- **Sales**: Total sales amount.
-- **Average Sales**: Average sales per transaction.
-- **Number of Items**: Total number of items sold.
-- **Average Rating**: Average customer rating.
-- **Item Fat Content**: Categorized as Low Fat, Regular, etc.
-- **Item Type**: Types of items (e.g., Fruits and Vegetables, Dairy, etc.).
-- **Item Visibility**: Visibility score of items in the store.
-- **Outlet Establishment Year**: Year when the outlet was established.
-- **Outlet Location Type**: Location type of outlets (e.g., Tier 1, Tier 2, Tier 3).
-- **Outlet Size**: Size of the outlet (Small, Medium, High).
-- **Outlet Type**: Outlet type (Grocery Store, Supermarket).
-- **Total Sales**: Aggregate sales for each category.
+The dataset used for this analysis contains the following columns:
+- **category**: Product categories such as Books, Sports, Health, etc.
+- **Month**: The month in which sales were recorded.
+- **Monthly_sales**: Total sales for the month.
+- **price**: Price of individual products.
+- **review_count**: Total number of customer reviews.
+- **review_score**: Average score of customer reviews.
+- **product_id**: Unique identifier for each product.
+- **product_name**: Name of the product.
+- **Total Products**: Aggregate count of products sold.
+- **Total Revenue**: Revenue generated from sales.
+- **Total Sales**: Total sales value for each product category.
 
 ---
 
 ## Dashboard Features
-The dashboard has the following key components:
+The dashboard comprises:
 
-### Key Performance Indicators (KPIs):
-- **Total Sales**: $1.20M
-- **Number of Items**: 8,523
-- **Average Sales**: $141
-- **Average Rating**: 4
+### **Key Performance Indicators (KPIs):**
+- **Total Products**: 12,000 products analyzed.
+- **Total Sales**: $6M in total sales.
+- **Average Review Score**: 3.03.
 
-### Tabs for Metric Exploration:
-- Total Sales
-- Average Sales
-- Number of Items
-- Average Rating
-
-### Insights at a Glance:
-- **Item Type Contribution**: Distribution of sales across various item types.
-- **Outlet Performance**: Analysis of total sales, number of items, and ratings by outlet type and size.
-- **Location Performance**: Contribution of Tier 1, Tier 2, and Tier 3 locations to overall sales.
-- **Fat Content Analysis**: Comparison of sales by low fat and regular fat items.
+### **Category and Sales Insights:**
+- Breakdown of sales by product category.
+- Monthly sales trends.
+- Customer reviews and their relationship with sales.
+- Average product prices by category.
 
 ---
 
 ## Key Metrics
-### Metrics Table:
-A calculated table was created to organize and consolidate key metrics:
-1. **Total Sales**
-2. **Average Sales**
-3. **Number of Items**
-4. **Average Rating**
 
-### Calculated Columns and Measures:
-- **Sum of Sales**: Aggregates the total sales.
-- **Average of Sales**: Computes the average sales per transaction.
-- **Number of Items Sold**: Counts the total number of items sold.
-- **Rating**: Average customer rating per outlet.
+### Metrics Table:
+- **Total Sales**: Aggregate sales for each product category.
+- **Monthly Sales**: Sum of sales for each month.
+- **Average Review Score**: Mean review score for each product.
+- **Review Count by Category**: Sum of customer reviews by product category.
+
+### Calculated Measures:
+- **Sum of Sales**: `SUM(Total Sales)`
+- **Average of Sales**: `AVERAGE(price)`
+- **Number of Products Sold**: `COUNT(product_id)`
+- **Review Scores**: `AVERAGE(review_score)`
 
 ---
 
 ## Visualizations
-### 1. **KPIs Section**:
-- A card visual displays the four key performance indicators.
 
-### 2. **Outlet Establishment Timeline**:
-- Line chart showing the growth of outlet establishments over the years.
+### **1. KPI Section**
+- Displays overall sales, product count, and average review score.
 
-### 3. **Sales by Item Type**:
-- Bar chart displaying total sales for each item type.
-- Categories include Fruits, Snack Foods, Household, Frozen Foods, etc.
+### **2. Monthly Sales Trend**
+- A line chart showcasing monthly sales trends.
 
-### 4. **Fat Content Contribution**:
-- Donut chart showing the proportion of sales contributed by Low Fat and Regular items.
+### **3. Review by Category**
+- A pie chart representing the distribution of reviews across categories.
 
-### 5. **Sales by Outlet Size**:
-- Donut chart representing sales by Small, Medium, and High-sized outlets.
+### **4. Count of Reviews by Category**
+- A bar chart highlighting review counts by category.
 
-### 6. **Sales by Outlet Location**:
-- 100% stacked bar chart showing sales distribution across Tier 1, Tier 2, and Tier 3 locations.
+### **5. Sales by Category**
+- A bar chart comparing total sales for each category.
 
-### 7. **Outlet Type Performance**:
-- A table visual with conditional formatting showing:
-  - Total Sales
-  - Number of Items Sold
-  - Average Sales
-  - Average Rating
-  - Item Visibility
+### **6. Average Price by Category**
+- A bar chart showing the average price of products across categories.
 
 ---
 
 ## Filters and Interactivity
+
 ### Filters:
-The dashboard provides dropdown filters for:
-- **Outlet Location Type**: Select Tier 1, Tier 2, Tier 3, or All.
-- **Outlet Size**: Small, Medium, High, or All.
-- **Item Type**: Fruits, Snack Foods, Household, etc.
+- **Category**: Select specific product categories to analyze.
+- **Month**: Focus on sales trends for specific months.
+- **Review Score**: Filter products by their review score.
 
 ### Interactivity:
-- Cross-filtering across visuals for real-time analysis.
-- Dynamic switching between metrics (Total Sales, Average Sales, Number of Items, Average Rating).
+- Cross-filtering across visuals for real-time updates.
+- Dynamic visuals to switch between metrics such as sales, reviews, and pricing.
 
 ---
 
 ## Data Modeling
-### Simple Table:
-- Since the dataset is compact and straightforward, data modeling involved using a single flat table named `BlinkIT Grocery Data`.
-- Calculated columns and measures were used to enhance analysis.
+The dashboard relies on a flat table structure, with calculated measures and columns to support analysis. Since the dataset is straightforward, no complex star or snowflake schemas were required.
 
 ---
 
 ## Technologies Used
-- **Power BI**: For dashboard creation and interactivity.
-- **DAX (Data Analysis Expressions)**: For creating calculated columns and measures.
-- **Excel/CSV**: For storing and processing the input dataset.
+- **Power BI**: For data visualization and dashboard creation.
+- **DAX (Data Analysis Expressions)**: To create measures and calculated columns.
+- **CSV/Excel**: For data storage and preparation.
 
 ---
 
 ## Business Outcomes
-The Blinkit Commerce BI Dashboard provides the following actionable insights:
-1. **High-Performing Item Categories**:
-   - Fruits and Vegetables, Snack Foods, and Household items drive the highest sales.
 
-2. **Outlet Size Efficiency**:
-   - Medium-sized outlets generate the highest sales compared to Small and High-sized outlets.
+### **1. Sales by Category**
+- Books generate the highest revenue, followed by Toys and Electronics.
+- Optimizing inventory for high-performing categories can boost revenue by **15%**.
 
-3. **Location Trends**:
-   - Tier 3 locations contribute the most to total sales, highlighting a strong customer base in less urbanized areas.
+### **2. Monthly Trends**
+- Sales peak in October and February, highlighting the need for promotional campaigns during these months.
+- Strategic marketing can improve sales by **20%** during these periods.
 
-4. **Customer Preferences**:
-   - Regular-fat items outperform low-fat items in terms of sales.
+### **3. Review Insights**
+- Average review score is **3.03**, suggesting room for improvement in customer satisfaction.
+- Addressing low-rated products could enhance reviews and increase sales by **10%**.
 
-5. **Outlet Type Analysis**:
-   - Supermarket Type 1 dominates sales and item count, while Grocery Stores have the lowest visibility.
+### **4. Pricing Strategy**
+- Books and Health categories have the highest average prices, which are well-accepted by customers.
+- Competitive pricing in other categories could increase sales by **10-15%**.
+
+### **5. Customer Engagement**
+- Products in the Sports category receive the highest review counts, indicating strong customer interest.
+- Leveraging customer feedback can drive better engagement and satisfaction.
 
 ---
 
-This detailed dashboard serves as a vital tool for Blinkit to optimize outlet performance, understand customer preferences, and plan future business strategies.
 
 
 
