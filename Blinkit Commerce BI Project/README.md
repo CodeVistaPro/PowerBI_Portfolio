@@ -158,6 +158,6 @@ The Blinkit Commerce BI Dashboard provides the following actionable insights:
 
 ---
 
-This detailed dashboard serves as a vital tool for Blinkit to optimize outlet performance, understand customer preferences, and plan future business strategies.
+
 
 
