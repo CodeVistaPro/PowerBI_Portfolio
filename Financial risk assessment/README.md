@@ -5,6 +5,12 @@ The **Financial Risk Assessment Dashboard** is a comprehensive data visualizatio
 
 ---
 
+## Dashboard Preview
+
+Below is a snapshot of the interactive dashboard: ![Dashboard](https://github.com/CodeVistaPro/PowerBI_Portfolio/blob/main/Financial%20risk%20assessment/Screenshot%202025-01-13%20143140.png)
+
+---
+
 ## Table of Contents
 
 1. [Project Objective](#project-objective)
