@@ -6,6 +6,12 @@ The **Superstore Report Dashboard** is a powerful data visualization tool create
 
 ---
 
+## Dashboard Preview
+
+Below is a snapshot of the interactive dashboard: ![Dashboard](https://github.com/CodeVistaPro/PowerBI_Portfolio/blob/main/Superstore%20Analysis/Superstore%20Analysis.png)
+
+---
+
 ## Table of Contents 
 
 1. [Project Objective](#project-objective)  
