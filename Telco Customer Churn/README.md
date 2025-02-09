@@ -5,13 +5,19 @@ The **Telco Customer Churn Analysis Dashboard** is a data visualization tool cre
 
 ---
 
+## Dashboard Preview
+
+Below is a snapshot of the interactive dashboard: ![Dashboard](https://github.com/CodeVistaPro/PowerBI_Portfolio/blob/main/Telco%20Customer%20Churn/Telecom%20Churn%20Analysis.png)
+
+---
+
 ## **Table of Contents**
-1. Project Objective
-2. Key Features
-3. Data Sources and Columns
-4. Measures and Calculations
-5. Insights and Business Outcomes
-6. Usage and Future Scope
+1. [Project Objective](#project-objective)   
+2. [Key Features](#key-features) 
+3. [Data Sources and Columns](#data-sources-and-columns)  
+4. [Measures and Calculations](#measures-and-calculations) 
+5. [Insights and Business Outcomes](#insights-and-business-outcomes)
+6. [Usage and Future Scope](#usage-and-future-scope)
 
 ---
 
