@@ -4,6 +4,12 @@ This project represents a Power BI dashboard created for Blinkit, aimed at analy
 
 ---
 
+## Dashboard Preview
+
+Below is a snapshot of the interactive dashboard: ![Banking Churn Dashboard](https://github.com/CodeVistaPro/PowerBI_Portfolio/blob/main/Blinkit%20Commerce%20BI%20Project/blinkit.png)
+
+---
+
 ## Table of Contents
 1. [Project Objective](#project-objective)
 2. [Data Used](#data-used)
