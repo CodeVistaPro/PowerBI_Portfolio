@@ -3,7 +3,11 @@
 ## Project Overview
 The E-Commerce Sales Analysis project leverages Power BI to provide an interactive and visually engaging dashboard that delves into the performance of an e-commerce platform. The dashboard offers insights into total sales, product performance, customer reviews, and pricing trends to help businesses make data-driven decisions and optimize their strategies.
 
+## Dashboard Preview
 
+Below is a snapshot of the interactive dashboard: ![Banking Churn Dashboard](https://github.com/CodeVistaPro/PowerBI_Portfolio/blob/main/E-Commerce_Sales_Analysis/ecommerce.png)
+
+---
 
 ## Table of Contents
 1. [Project Objective](#project-objective)
