@@ -1,4 +1,4 @@
-# **Marketing Campaign Analysis - Power BI Dashboard**
+# **Marketing Campaign Analysis**
 
 ## **📌 Project Overview**
 
